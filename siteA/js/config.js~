@@ -11,30 +11,6 @@
  * 合并的使用一定需要注意，多页面都会使用的js,需要单独处理，如果压缩进去就会重复加载
  * window.load 需要调用从lad加载的js会出现问题,lad是异步并行加载，可能还没有加载完成就来调用了.
  */
-
-
-//全局环境变量
-var ENV = {
-            //环境配置
-            type : "development",
-            //api请求前 
-            baseApi : "http://192.168.0.183/api/",
-            //远程路径
-            remoteFile : "http://192.168.0.183/swift/mobile/",
-            //本地路径
-            localFile : "../",
-            //version版本
-            version : "1.0",
-            //浏览器信息 
-            browser : '',//getBrowserInfo();
-            //语言包 先从cookie中获取，否，默认为英语。
-            lang : 'en',//getLang();
-            //debug
-            debug : true,
-            //分隔界限
-            width :640 
-};
-
 ;(function() {
         var func = {
 		routePage : function () {
@@ -83,7 +59,7 @@ var ENV = {
                           ],
                           
                           'css' : [
-                              ENV.remoteFile+"css/default/public.css"
+                              ENV.remoteFile+"css/siteA/public.css"
                           ]
                     },
 
@@ -101,10 +77,12 @@ var ENV = {
               'index' : {
                      'development' : {
                          'js' : [
-                              ENV.localFile+"js/index.js"
+                              ENV.localFile+"js/index.js",
+                              ENV.remoteFile+"js/componnet/dialog/zepto.dialog.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/index.css"    
+                              ENV.remoteFile+"css/siteA/index.css",    
+                              ENV.remoteFile+"js/componnet/dialog/zepto.dialog.css"
                           ]
                      },
                      'production' : {
@@ -116,13 +94,15 @@ var ENV = {
                      'development' : {
                          'js' : [
                               ENV.localFile+"js/joinus.js",
+                              ENV.localFile+"js/share.js",
                               ENV.remoteFile+"js/componnet/tab/zepto.tab_a.js",
                               ENV.remoteFile+"js/componnet/mobiscroll/mobiscroll.dev.js",
                               ENV.remoteFile+"js/componnet/html5UploadAjax/html5.upload.ajax.js"
                           ],
                           'css' : [
                               ENV.remoteFile+"js/componnet/mobiscroll/css/mobiscroll.dev.css",
-                              ENV.remoteFile+"css/default/joinus.css" 
+                              ENV.remoteFile+"css/siteA/joinus.css", 
+                              ENV.remoteFile+"css/siteA/singin.css" 
                           ]
                      },
                      'production' : {
@@ -137,7 +117,7 @@ var ENV = {
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/singin.css" 
+                              ENV.remoteFile+"css/siteA/singin.css" 
                           ]
                      },
                      'production' : {
@@ -152,7 +132,7 @@ var ENV = {
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/forgetpw.css" 
+                              ENV.remoteFile+"css/siteA/forgetpw.css" 
                           ]
                      },
                      'production' : {
@@ -167,7 +147,7 @@ var ENV = {
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/changepw.css" 
+                              ENV.remoteFile+"css/siteA/changepw.css" 
                           ]
                      },
                      'production' : {
@@ -182,8 +162,8 @@ var ENV = {
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/share.css", 
-                              ENV.remoteFile+"css/default/user_search.css" 
+                              ENV.remoteFile+"css/siteA/share.css", 
+                              ENV.remoteFile+"css/siteA/user_search.css" 
                           ]
                      },
                      'production' : {
@@ -198,7 +178,7 @@ var ENV = {
                               ENV.remoteFile+"js/componnet/slider/zepto.slider.js",
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/user_info.css",
+                              ENV.remoteFile+"css/siteA/user_info.css",
                               ENV.remoteFile+"js/componnet/slider/zepto.slider.css"
                           ]
                      },

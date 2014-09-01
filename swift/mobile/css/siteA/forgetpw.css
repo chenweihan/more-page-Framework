@@ -1,0 +1,100 @@
+#forgetpw {
+    width: 100%;
+    min-width: 20em;
+}
+
+.head {
+    width: 100%;
+    height: 2.125em;
+    line-height: 2.125em;
+    font-size: 1.625em;
+    background: #181c20;
+    text-align: center;
+    color: #d3ac67;
+    border-bottom: 0.1625em solid #d3ac67;
+}
+
+.head .backBtn {
+    position:absolute;
+    width:5em;
+    display:block;
+    height:2.125em;
+    background: url('../../img/siteA/back.png') no-repeat 10px center;
+    background-size: 30px 30px;
+}
+
+.body {
+    width: 18.75em;
+    margin: 1em auto;
+    padding: 0 0.65em;
+    color: #999999;
+}
+
+.body .des {
+   font-size: 0.75em;
+}
+
+.btn-forgetpw {
+    width: 100%;
+    height: 3em;
+}
+
+.signup_item {
+    margin:1.5em 0;
+}
+
+.form_input {
+    display: block;
+    width: 87%;
+    height: 25px;
+    padding: 0.375em 0 0.375em 2.5em;
+    font-size: 0.875em;
+    line-height: 1.0;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*
+.form_input:focus {
+    border:1px solid #4D78B6;
+    -webkit-box-shadow: #4D78B6 0px 0px 10px;
+}
+*/
+
+.email_input {
+    background: url('../../img/siteA/mail.png') #f5f5f5 no-repeat 2px center;
+    background-size: 25px 25px;
+}
+
+.input_err {
+    background-color: #fcd7d7;
+}
+
+.err {
+    font-size:13px;
+    color:#ff0000;
+    padding-left:10px;
+    margin-top:-10px;
+    margin-bottom:10px;
+}
+
+.err {
+    font-size:13px;
+    color:#ff0000;
+    padding-left:10px;
+}
+
+.ajaxLoading {
+    background: url('../../img/siteA/min_loading.gif') no-repeat center center;
+    width:100%;
+    height:30px;
+}
+
+
+@media screen and (min-width: 640px) {
+   .body {width:35em;}
+   .body h1 { text-align:center;}
+   .body p {text-align:center}
+   .form_input {width: 93%;}
+}

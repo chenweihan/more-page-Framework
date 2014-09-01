@@ -1,0 +1,62 @@
+
+
+@media screen and (min-width:460px) and (max-width:560px){
+.input{
+		width:87% !important;
+}
+}
+@media screen and (min-width:360px) and (max-width:460px){
+.input{
+		width:85% !important;
+}
+}
+@media screen and (max-width:360px){
+.input{
+		width:84% !important;
+}
+}
+.input{
+	width:91%;
+	height:1.625em;
+	padding:0.5em 0 0.5em 3em;
+	background-color:#f4f4f4;
+	border:1px solid #bfbfbf;
+	border-radius:0.2em;
+	-moz-border-radius:0.2em;
+	-webkit-border-radius:0.2em;
+	line-height:1.625em;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#999;
+	font-size:1em;
+}
+.date_input{
+	background:url(date.png) no-repeat  #f4f4f4 1em  0.65em / 1.25em;
+}
+
+.country_input{
+	background:url(country.png) no-repeat  #f4f4f4 1em  0.65em / 1.25em;
+}
+.zip_input{
+	background:url(zip.png) no-repeat  #f4f4f4 1em  0.65em / 1.5em;
+	margin-top:1.5em;
+}
+.btn{
+	width:100%;
+	padding:0.5em 0;
+	border:none;
+	border-radius:0.2em;
+	-moz-border-radius:0.2em;
+	-webkit-border-radius:0.2em;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+.btn_yellow{
+	background:#e4b628;
+	color:#fff;
+	text-shadow:0 1px 0 #333;
+}
+.btn_signup{
+	font-size:1.625em;
+	padding:0.5em 0;
+}

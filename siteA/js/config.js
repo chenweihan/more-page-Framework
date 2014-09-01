@@ -59,7 +59,7 @@
                           ],
                           
                           'css' : [
-                              ENV.remoteFile+"css/default/public.css"
+                              ENV.remoteFile+"css/siteA/public.css"
                           ]
                     },
 
@@ -81,7 +81,7 @@
                               ENV.remoteFile+"js/componnet/dialog/zepto.dialog.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/index.css",    
+                              ENV.remoteFile+"css/siteA/index.css",    
                               ENV.remoteFile+"js/componnet/dialog/zepto.dialog.css"
                           ]
                      },
@@ -101,8 +101,8 @@
                           ],
                           'css' : [
                               ENV.remoteFile+"js/componnet/mobiscroll/css/mobiscroll.dev.css",
-                              ENV.remoteFile+"css/default/joinus.css", 
-                              ENV.remoteFile+"css/default/singin.css" 
+                              ENV.remoteFile+"css/siteA/joinus.css", 
+                              ENV.remoteFile+"css/siteA/singin.css" 
                           ]
                      },
                      'production' : {
@@ -117,7 +117,7 @@
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/singin.css" 
+                              ENV.remoteFile+"css/siteA/singin.css" 
                           ]
                      },
                      'production' : {
@@ -132,7 +132,7 @@
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/forgetpw.css" 
+                              ENV.remoteFile+"css/siteA/forgetpw.css" 
                           ]
                      },
                      'production' : {
@@ -147,7 +147,7 @@
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/changepw.css" 
+                              ENV.remoteFile+"css/siteA/changepw.css" 
                           ]
                      },
                      'production' : {
@@ -162,8 +162,8 @@
                               ENV.localFile+"js/share.js"
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/share.css", 
-                              ENV.remoteFile+"css/default/user_search.css" 
+                              ENV.remoteFile+"css/siteA/share.css", 
+                              ENV.remoteFile+"css/siteA/user_search.css" 
                           ]
                      },
                      'production' : {
@@ -178,7 +178,7 @@
                               ENV.remoteFile+"js/componnet/slider/zepto.slider.js",
                           ],
                           'css' : [
-                              ENV.remoteFile+"css/default/user_info.css",
+                              ENV.remoteFile+"css/siteA/user_info.css",
                               ENV.remoteFile+"js/componnet/slider/zepto.slider.css"
                           ]
                      },

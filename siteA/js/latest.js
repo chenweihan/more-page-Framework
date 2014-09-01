@@ -13,11 +13,11 @@ var ENV = {
 	    //环境配置
 	    type : "development",
         //domain :
-        domain : "http://192.168.0.183/",
+        domain : "http://127.0.0.1/",
 	    //api请求Base 
-	    baseApi : "http://192.168.0.183/api/",
+	    baseApi : "http://127.0.0.1/api/",
 	    //远程路径
-	    remoteFile : "http://192.168.0.183/swift/mobile/",
+	    remoteFile : "http://127.0.0.1/more-page-Framework/swift/mobile/",
 	    //本地路径
 	    localFile : "../",
 	    //version版本

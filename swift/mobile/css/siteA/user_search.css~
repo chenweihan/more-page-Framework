@@ -1,0 +1,91 @@
+#user_search {
+    width: 100%;
+    min-width: 20em;
+}
+
+.head {
+    width: 100%;
+    height: 2.125em;
+    line-height: 2.125em;
+    font-size: 1.625em;
+    background: #181c20;
+    text-align: center;
+    color: #d3ac67;
+    border-bottom: 0.1625em solid #d3ac67;
+}
+
+.head .userNav {
+    position:absolute;
+    width:5em;
+    display:block;
+    left:0px;
+    height:2.125em;
+    background: url('../../img/default/back.png') no-repeat 10px center;
+    background-size: 30px 30px;
+}
+
+.head .userSearch {
+    position:absolute;
+    width:5em;
+    right:0px;
+    display:block;
+    height:2.125em;
+    background: url('../../img/default/back.png') no-repeat 90px center;
+    background-size: 30px 30px;
+}
+
+.list {
+    width:100%;
+    height:100px;
+    background: #FFF;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.user_icon {
+    height:100px;
+    width:100px;
+    float:left; 
+}
+
+.user_icon img {
+    height:100px;
+    width:100px;
+    border:0px; 
+}
+
+.icon_num {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: #fff;
+    width: 30px;
+    height: 20px;
+    padding-left: 15px;
+    border: 1px solid #f00;
+}
+
+.user_des {
+    margin-left:100px;
+    height:100px;
+    padding: 0 10px;
+}
+
+.user_des div{ padding-top:7px;}
+
+.user_des_name {
+    font-size:20px;
+    font-weight:bold;
+    height:30px;
+}
+
+.user_des_age {
+    font-size:16px;
+    color:#b8b8b8;
+}
+
+.user_des_text {
+    font-size:16px;
+    color:#d3ac67;
+}
