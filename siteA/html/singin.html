@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <title>singin</title>
+     <meta http-equiv=Content-Type content="text/html" charset='utf-8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     </head>
+<body>
+     <div class="body_loading"></div>
+     <script type="text/html" id="singin_ejs">
+     <div id='singin'>
+          <div class='fixedMsg'> <span class='fixedErr'></span>  <div class='fixedText'><%=singin_fixedText%></div> </div>
+          <!-- head -->
+          <div class='head'>
+                  <span class="backBtn"></span>
+                  <span><%=siteName%></span>
+          </div>
+          <!--body -->
+          <div class='body'>
+                 <h1>SING IN</h1>
+                 <p class='des'> <%=singin_des%> </p>
+                 <button type="button" class="btn facebookbg"> <%=singin_facebook%></button>
+                 <div class="or"> <span></span> OR <span></span></div>
+                 <div class="signup_item EU">
+	              <input  name="userName"  type="text" class="form_input email_input"  placeholder="Email or Username"  >
+	         </div>
+                 <div class="signup_item PW">
+	              <input  name="passWord" type="password" class="form_input password_input"  placeholder="Password"  >
+	         </div>
+                 <div class="forget_password"> <span> <%=singin_forgetPW%></span></div>
+                 <button type="button" class="btn btn-yellow btn-singin"> <%=singin_done%> </button>
+          </div>
+          <!-- foot -->
+          <div class='foot' ></div>
+    </div>
+    </script>
+    <script type="text/javascript" src="../js/load.js"></script>
+</body>
+</html>

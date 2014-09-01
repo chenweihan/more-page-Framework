@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件上存</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        var xhr_provider = function(){
+            var xhr = jQuery.ajaxSettings.xhr();
+            if(progressFunction && xhr.upload) {
+                alert(10);
+                xhr.upload.addEventListener("progress", progressFunction, false);
+            }
+            return xhr;
+        };
+        $(function () {
+            $("#upload_file").on('click', function () {
+                alert(16);
+                var data = new FormData();
+                    data.append('file', $("#file")[0].files[0]);
+                $.ajax({
+                    data:data,
+                    url: "upload.php",
+                    type: 'post',
+                    contentType: false,
+                    processData: false,
+                    xhr: xhr_provider,
+                    success: function () {
+                    },
+                    error: function () {
+                    }
+                });
+            });
+        });
+    function progressFunction(evt){
+        var progressBar = document.getElementById("progressBar");
+        var percentageDiv = document.getElementById("percentage");
+        if(evt.lengthComputable){
+            progressBar.max = evt.total;
+            progressBar.value = evt.loaded;
+            alert(evt);
+            $(percentageDiv).html(Math.round(evt.loaded /evt.total * 100) + "%");
+        }
+    }
+    </script>
+</head>
+<body>
+<div class="container">
+    <progress id="progressBar" value="13" max="100"></progress>
+    <span id="percentage"></span>
+    <input id="file"  type="file" name="file">
+    <input id="upload_file" class="btn btn-primary"  type="button" value="上存">
+</div>
+</body>
+</html>

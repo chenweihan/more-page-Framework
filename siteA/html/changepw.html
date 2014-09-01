@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <title>changepw</title>
+     <meta http-equiv=Content-Type content="text/html" charset='utf-8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     </head>
+<body>
+
+     <div class="body_loading"></div>
+     <script type="text/html" id="changepw_ejs">
+     <div id='changepw'>
+          <!-- head -->
+          <div class='head'>
+                  <span class="backBtn"></span>
+                  <span><%=siteName%></span>
+          </div>
+          <!--body -->
+          <div class='body'>
+                 <p class='des'><%=changepw_des%></p>
+                 <div class="signup_item passwordN">
+	              <input  name="passwordN" type="password" class="form_input password_input"  placeholder="New Password"  >
+	         </div>
+                 <div class="signup_item passwordC">
+	              <input  name="passwordC" type="password" class="form_input password_input"  placeholder="Confirm"  >
+	         </div>
+
+
+                 <button type="button" class="btn btn-yellow btn-changepw"><%=changepw_done%></button>
+          </div>
+          <!-- foot -->
+          <div class='foot' ></div>
+    </div>
+    </script>
+    <script type="text/javascript" src="../js/load.js"></script>
+</body>
+</html>

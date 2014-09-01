@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+     <head>
+     <title>demo</title>
+     <meta http-equiv=Content-Type content="text/html" charset='utf-8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <script type="text/javascript" src="http://192.168.0.183/swift/mobile/js/base/LAB.min.js"></script>
+     </head>
+<body>
+  <div class="body_loading"></div>
+  <script type="text/ejs" id="joinus_ejs">
+  <div id="joinus_box"> 
+        
+	<div class="joinus_box_top"><span class="joinus_back"> </span> <span><%= joinus_sitename %></span> </div>
+        <div class="joinus_box_color_nav"><span></span><span></span><span></span></div> 
+        <div id="joinus_tab_box">
+            <div id="joinus_tabs"> 
+		<div id="joinus_frist" class="joinus_tab">
+		    <div class="joinus_box_center"> 
+			 <div class="jbc_des">
+			     <p class="jbc_des_title"><%= joinus_des_title %></p>
+			     <p class="jbc_des_text"><%= joinus_des_text %></p>
+			 </div>
+			 <button type="button" class="btn jbc_facebook"> <%= joinus_facebook %></button>
+			 <div class="jbc_or">
+			    <span></span> OR <span></span>
+			 </div>
+			 <div class="jbc_form">
+			    <div class="jbc_input email"> <input name="email" type="text" class="input_email"  placeholder="Email">  </div>
+			    <div class="jbc_input userName" > <input name="userName" type="text" class="input_userName"  placeholder="Username"> </div>
+			    <div class="jbc_input passWord"> <input name="passWord" type="text" class="input_passWord"  placeholder="Password"> </div>
+			 </div>
+			 <button type="button" class="btn btn-yellow jbc-frist"> <%= joinus_btn_continue %></button>
+		    </div>
+		    <div class="joinus_box_bottom">
+			 <div class="jbb_top"> <%= lang.joinus_jbb_top %></div>
+			 <div class="jbb_bottom"> <%= lang.joinus_jbb_bottom1 %> <span><%= lang.joinus_jbb_bottom2 %>e</span> </div>
+		    </div>
+		 </div>
+		 <div id="joinus_second" class="joinus_tab">
+                     <div class="joinus_box_center">
+                      
+                         <div class="js_des">
+			     <p class="js_des_title"><%= js_des_title %></p>
+			     <p class="js_des_text"><%= js_des_text %></p>
+			 </div>
+
+                         <div class="js_img">
+                             <div class="js_icon" id="icon_img">
+                                   <div class="add_icon">  </div>
+                                   <div id="img_show"></div>
+                                   <div id="progress"></div>
+                                   <input id="file"  type="file" name="file">    
+                             </div>      
+                         </div>
+                         
+                         <div class="js_your"><%= js_your_gender%></div>
+                         <div class="js_your_gender gender"> 
+                              <div class="gender_item" type="man"><div class="gender_icon man"></div></div>
+                              <div class="gender_item" type="woman"><div class="gender_icon woman"></div></div>
+                         </div>   
+                         <div class="jbc_form">
+                              <div class="js_your"><%= js_your_age%></div>
+			      <div class="jbc_input age"> <input name="age" type="text" id="age" class="input_age" placeholder="Age">  </div>
+                              <div class="js_your"><%= js_your_loction%></div>
+
+                              <div class="jbc_input loction"> 
+                                   <select id="country" class="demo-test-select" data-role="none">
+				        <option value="" disabled selected></option>
+                                        <option value="1">Atlanta</option>
+					<option value="2">Berlin</option>
+					<option value="3">Boston</option>
+					<option value="4">Chicago</option>
+					<option value="5">London</option>
+					<option value="6">Los Angeles</option>
+					<option value="7">New York</option>
+					<option value="8">Paris</option>
+					<option value="9">San Francisco</option>
+			           </select>                            
+                              </div>              
+			    
+                              <div class="jbc_input zipCode"> <input name="zipCode" type="text" class="input_zip" placeholder="Zip code"> </div>
+			 </div>
+			 <button type="button" class="btn btn-yellow jbc-second"> <%= joinus_btn_continue %></button>
+                     </div>
+                 </div>
+		 <div id="joinus_three" class="joinus_tab">
+
+                     <div class="joinus_box_center">
+                         <div class="js_des">
+			     <p class="js_des_title"><%= jt_des_title %></p>
+			     <p class="js_des_text"><%= js_des_text %></p>
+			 </div>
+
+                         <div class="js_your jt_your"><%= jt_lookfor_gender%></div>
+                           
+                         <div class="js_your_gender lookForGender"> 
+                              <div class="gender_item" type="man"><div class="gender_icon man"></div></div>
+                              <div class="gender_item" type="woman"><div class="gender_icon woman"></div></div>
+                         </div>   
+
+                         <div class="jbc_form">
+                              <div class="js_your"><%= js_lookfor_age%></div>
+			      <div class="jbc_input lookfor_age">
+                                   <span>FROM</span> 
+                                   <input name="age_from" type="text" class="input_age_from age_input" placeholder="18">
+                                   <span>TO</span> 
+                                   <input name="age_to" type="text" class="input_age_to age_input" placeholder="99">
+                             </div>
+			 </div>
+
+			 <button type="button" class="btn btn-yellow jbc-three"> <%= joinus_btn_submit %></button>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+  </div>
+  </script>
+</body>
+</html>

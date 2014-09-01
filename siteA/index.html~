@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+     <head>
+     <title>millionairematch</title>
+     <meta http-equiv=Content-Type content="text/html" charset='utf-8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     </head>
+<body>
+     <div class="body_loading"></div>
+     <script type="text/html" id="index_ejs">
+     <div id="index_box">
+           <div class="index_box_top"></div>
+           <div class="index_box_img"></div>
+           <div class="index_box_bottom">
+                <button type="button" class="btn btn-yellow joinus"><%=joinus%></button>
+                <button type="button" class="btn btn-brown singin"><%=singin%></button>
+           </div>
+     </div>
+     </script>
+    <script type="text/javascript" src="../js/load.js"></script>
+</body>
+</html>

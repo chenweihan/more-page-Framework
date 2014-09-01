@@ -1,0 +1,41 @@
+.comfirmDialog {
+   margin:auto;
+   position:absolute;
+   width:300px;
+   height:100px;
+   border:1px solid #fff;
+   border-radius:5px;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   color:#fff;
+   display:table; 
+}
+
+.bgOpacity {
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   background:#000;
+   opacity:0.8;
+   border-radius:5px;
+}
+
+.comfirmSubmit {
+   position: absolute;
+   width: 100%;
+   bottom: 10px;
+   text-align:center;
+}
+
+.comfirmSubmit span {
+   display:inline-block;
+   width:100px;
+   height:30px;
+   line-height:30px; 
+   border:1px solid #fff;
+   border-radius:5px; 
+}

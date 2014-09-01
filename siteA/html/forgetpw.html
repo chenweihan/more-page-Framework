@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <title>foegetpw</title>
+     <meta http-equiv=Content-Type content="text/html" charset='utf-8'>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     </head>
+<body>
+     <div class="body_loading"></div>
+     <script type="text/html" id="forgetpw_ejs">
+     <div id='forgetpw'>
+          <!-- head -->
+          <div class='head'>
+                  <span class="backBtn"></span>
+                  <span><%=siteName%></span>
+          </div>
+          <!--body -->
+          <div class='body'>
+                 <p class='des'><%=forgetpw_des%></p>
+                 <div class="signup_item email">
+	              <input  name="email" type="text" class="form_input email_input"  placeholder="Email"  >
+	         </div>
+                 <button type="button" class="btn btn-yellow btn-forgetpw"><%=forgetpw_done%></button>
+          </div>
+          <!-- foot -->
+          <div class='foot' ></div>
+    </div>
+    </script>
+    <script type="text/javascript" src="../js/load.js"></script>
+</body>
+</html>
