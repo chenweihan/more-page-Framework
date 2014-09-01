@@ -1,0 +1,127 @@
+#user_info {
+    width: 100%;
+    min-width: 20em;
+}
+
+.head {
+    width: 100%;
+    height: 2.125em;
+    line-height: 2.125em;
+    font-size: 1.625em;
+    background: #181c20;
+    text-align: center;
+    color: #d3ac67;
+    border-bottom: 0.1em solid #d3ac67;
+}
+
+.head .backBtn {
+    position:absolute;
+    width:5em;
+    display:block;
+    height:2.125em;
+    background: url('../../img/default/back.png') no-repeat 10px center;
+    background-size: 30px 30px;
+}
+
+.head .userBtn {
+    position:absolute;
+    width:5em;
+    right:0px;
+    display:block;
+    height:2.125em;
+    background: url('../../img/default/back.png') no-repeat 90px center;
+    background-size: 30px 30px;
+}
+
+
+.body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width:600px;
+    margin:auto;
+}
+
+.btn_info {
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-freewink {
+    width:135px;
+    margin-right: 10px;
+}
+
+.btn-frvorites {
+    width:140px;
+    margin-left: 10px;
+}
+
+.inputGroup {
+    padding :0 10px 0 10px; 
+    height:40px;
+}
+
+.inputGroup input {
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+   float:left;  
+   width:85%;
+   border-right:none;
+   padding-left:0;
+}
+
+.inputGroup .sendButton {
+   float:left;
+   width:40px;
+   height: 24px;
+   padding: 0.375em 0 0.375em 0;
+   border-top:1px solid #ccc;
+   border-bottom:1px solid #ccc;
+   border-right:1px solid #ccc;
+}
+
+.tabInfo {
+   margin:10px 0;
+}
+
+.tabInfo .tabTitle {
+   height:42px;
+}
+
+.tabInfo .tabTitle_li {
+   float:left;
+   width:50%;
+   text-align:center;
+   height:40px;
+   line-height:40px;
+   color:#E0B569;
+   font-weight:bold;
+   border-top:1px solid #ccc;
+   border-bottom:1px solid #ccc;
+}
+
+.tabSelect {
+   background:#E0B569;
+   color:#fff;
+}
+
+.tabContent {
+   display:none;
+}
+
+.sendBox {
+   width:100%;
+   margin:auto; 
+} 
+
+@media screen and (min-width: 640px) {
+    .inputGroup input {
+       width:92%;
+    }
+
+    .tabInfo {
+       margin:10px;
+    }
+
+}
